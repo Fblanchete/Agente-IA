@@ -27,11 +27,11 @@ flowchart LR
     classDef todos fill:#FFFFFF,stroke:#000000,color:#000000
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 3 3
     classDef comment fill:#FFFFFF,stroke:#FF2C2C,color:#000000,stroke-dasharray: 4 4
-    classDef CRM fill:#FFFFFF,stroke:#808080,color:#808080,stroke-dasharray: 4 4
-    class A1,A2,L1,L2,L4,L5,LA,LNA,CRM2,CRM3,T1,T2,T3 todos
+    classDef CRM fill:#FFFFFF,stroke:#808080,color:#000000,stroke-dasharray: 4 4
+    class A1,A2,L1,L2,L4,L5,CRM2,CRM3,T1,T2,T3 todos
     class N0 nota
     class L3 comment
-    class CRM1 CRM
+    class CRM1, LA, LNA CRM
    
 
 ```
