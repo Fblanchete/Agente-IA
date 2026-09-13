@@ -17,8 +17,7 @@ flowchart LR
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución")
     T1 -->|"`**No Resuelta**`"| T2("Agente IA transfiere<br/>a equipo correspondiente")
-    T2 --> T3("Equipo BCN")
-    T2 --> T4("Equipo MAD")
+    T2 --> T3("Equipo MAD<br/>Equipo BCN")
     T2 -.-> CRM3("CRM: Inserta resumen<br/>de resolución")
   
 
@@ -31,7 +30,7 @@ flowchart LR
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 3 3
     classDef bcn fill:#FFFFFF,stroke:#FF2C2C,color:#000000,stroke-dasharray: 4 4
     classDef comment fill:#FFFFFF,stroke:#808080,color:#808080,stroke-dasharray: 3 3
-    class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2,T4 todos
+    class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2 todos
     class N0 nota
     class L3,T3 bcn
     class L3C,T3C comment
