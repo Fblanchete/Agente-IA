@@ -8,7 +8,7 @@ flowchart LR
     A2 -->|Lead| L1("Identifica ciudad<br/>en la que quiere el trastero")
     L1 --> L2("Agente IA transfiere<br/>a equipo correspondiente")
     L1 -.-> CRM1("CRM: Se crea el Lead en TT")
-    L2 --> L3("Entra con número IA (93...)<br/>No aparece número cliente")
+    L4 --> L3("Entra con número IA (93...)<br/>No aparece número cliente")
     L2 --> L4("Equipo MAD<br/>Equipo BCN")
     L2 --> L5("Notificación WhatsApp<br/>al Agente que recibe la llamada")
     CRM1 -.-> LA("Llamada Atendida:<br/>Agente, Nombre Cliente,<br/>Centro, Resumen")
