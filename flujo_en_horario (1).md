@@ -23,8 +23,6 @@ flowchart LR
 
     N0("ℹ️ Lead único por Agente:<br/>cada Lead lo gestiona<br/>siempre el mismo agente")
 
-    L3 -.-> L3C("Comments")
-    T3 -.-> T3C("Comments")
 
     classDef todos fill:#FFFFFF,stroke:#000000,color:#000000
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 3 3
@@ -33,7 +31,6 @@ flowchart LR
     class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2 todos
     class N0 nota
     class L3,T3 bcn
-    class L3C,T3C comment
     linkStyle 16 stroke:#808080,stroke-width:1px
 
 ```
