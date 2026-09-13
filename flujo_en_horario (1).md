@@ -31,7 +31,7 @@ flowchart LR
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 3 3
     classDef bcn fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 4 4
     classDef comment fill:#FFFFFF,stroke:#808080,color:#808080,stroke-dasharray: 3 3
-    class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2,T4,WA1 todos
+    class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2,T4 todos
     class N0 nota
     class L3,T3 bcn
     class L3C,T3C comment
