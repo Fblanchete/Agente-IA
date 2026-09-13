@@ -7,12 +7,12 @@ flowchart LR
 
     A2 -->|"`**Lead**`"| L1("Identifica ciudad<br/>en la que quiere el trastero")
     L1 --> L2("Agente IA transfiere<br/>a equipo correspondiente")
-    L1 -.-> CRM1("CRM: Se crea Lead en TT")
+    L1 -.-> CRM1("CRM: Creación Lead en TT")
     L4 -.- L3("Entra con número IA (93...)<br/>Imposible reconocer nº cliente")
     L2 --> L4("Equipo MAD<br/>Equipo BCN")
     L2 --> L5("Notificación WhatsApp<br/>al Agente que recibe la llamada")
-    CRM1 -.-> LA("Llamada Atendida:<br/>Agente, Nombre Cliente,<br/>Centro, Resumen")
-    CRM1 -.-> LNA("Llamada No Atendida:<br/>Agente, Ciudad,<br/>Indicado en CRM")
+    CRM1 -.-> |"`**Llamada Atendida**`"| LA("Inserción: Agente, Nombre Cliente,Centro, Resumen Llamada")
+    CRM1 -.-> |"`**Llamada NO Atendida**`"| LNA("Inserción: Agente, Ciudad,<br/>Indicado en CRM")
 
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución")
