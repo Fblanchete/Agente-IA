@@ -14,9 +14,9 @@ flowchart LR
     CRM1 -.-> LA("Llamada Atendida:<br/>Agente, Nombre Cliente,<br/>Centro, Resumen")
     CRM1 -.-> LNA("Llamada No Atendida:<br/>Agente, Ciudad,<br/>Indicado en CRM")
 
-    A2 -->|ATC| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
-    T1 -.->|Resuelta| CRM2("CRM: Inserta resumen<br/>de resolución")
-    T1 -->|No Resuelta| T2("Agente IA transfiere<br/>a equipo correspondiente")
+    A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
+    T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución")
+    T1 -->|"`**No Resuelta**`"| T2("Agente IA transfiere<br/>a equipo correspondiente")
     T2 --> T3("Equipo BCN")
     T2 --> T4("Equipo MAD")
     T2 -.-> CRM3("CRM: Inserta resumen<br/>de resolución")
