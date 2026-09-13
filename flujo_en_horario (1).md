@@ -3,12 +3,12 @@
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'fontFamily': 'Arial', 'background': '#FFFFFF', 'primaryColor': '#FFFFFF', 'primaryBorderColor': '#000000', 'primaryTextColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#FFFFFF', 'tertiaryColor': '#FFFFFF'}}}%%
 flowchart LR
-    A1("📞 Llamada Cliente<br/>(680...)") --> A2("🤖 Agente IA<br/>Identifica Lead / ATC")
+    A1("📞 Llamada Cliente<br/>(680 34 96 04)") --> A2("🤖 Agente IA<br/>Identifica Lead / ATC")
 
     A2 -->|"`**Lead**`"| L1("Identifica ciudad<br/>en la que quiere el trastero")
     L1 --> L2("Agente IA transfiere<br/>a equipo correspondiente")
     L1 -.-> CRM1("CRM: Se crea Lead en TT")
-    L4 -.- L3("Entra con número IA (93...)<br/>No aparece número cliente")
+    L4 -.- L3("Entra con número IA (93...)<br/>Imposible reconocer nº cliente")
     L2 --> L4("Equipo MAD<br/>Equipo BCN")
     L2 --> L5("Notificación WhatsApp<br/>al Agente que recibe la llamada")
     CRM1 -.-> LA("Llamada Atendida:<br/>Agente, Nombre Cliente,<br/>Centro, Resumen")
