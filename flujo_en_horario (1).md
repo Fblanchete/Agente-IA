@@ -20,7 +20,7 @@ flowchart LR
     T2 --> T3("Equipo BCN")
     T2 --> T4("Equipo MAD")
     T2 -.-> CRM3("CRM: Inserta resumen<br/>de resolución")
-    T2 -.->|Si es Deuda/Pago| WA1("Notificación WhatsApp<br/>al equipo correspondiente")
+  
 
     N0("ℹ️ Lead único por Agente:<br/>cada Lead lo gestiona<br/>siempre el mismo agente")
 
