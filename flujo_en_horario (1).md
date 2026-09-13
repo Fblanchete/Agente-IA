@@ -15,10 +15,10 @@ flowchart LR
     CRM1 -.-> |"`**Llamada NO Atendida**`"| LNA("Inserción: Agente, Ciudad,<br/>Indicado en CRM")
 
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
-    T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución")
+    T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
     T1 -->|"`**No Resuelta**`"| T2("Agente IA transfiere<br/>a equipo correspondiente")
     T2 --> T3("Equipo MAD<br/>Equipo BCN")
-    T2 -.-> CRM3("CRM: Inserta resumen<br/>de resolución")
+    T2 -.-> CRM3("CRM: Insercción resumen<br/>resolución Ficha Cliente")
   
 
     N0("ℹ️ Lead único por Agente:<br/>cada Lead lo gestiona<br/>siempre el mismo agente")
@@ -28,10 +28,10 @@ flowchart LR
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 4 4
     classDef comment fill:#FFFFFF,stroke:#FF2C2C,color:#000000,stroke-dasharray: 5 5
     classDef CRM fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 5 5
-    class A1,A2,L1,L2,L4,L5,CRM2,CRM3,T1,T2,T3 todos
+    class A1,A2,L1,L2,L4,L5,T1,T2,T3 todos
     class N0 nota
     class L3 comment
-    class CRM1,LA,LNA CRM
+    class CRM1,LA,LNA,CRM3,CRM2 CRM
    
 
 ```
