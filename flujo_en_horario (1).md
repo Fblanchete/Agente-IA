@@ -31,7 +31,7 @@ flowchart LR
     class A1,A2,L1,L2,L4,L5,LA,LNA,CRM1,CRM2,CRM3,T1,T2 todos
     class N0 nota
     class L3,T3 bcn
-    linkStyle 16 stroke:#808080,stroke-width:1px
+   
 
 ```
 
