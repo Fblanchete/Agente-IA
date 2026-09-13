@@ -36,7 +36,7 @@ flowchart LR
     class L3,T3 bcn
     class L3C,T3C comment
     linkStyle 16 stroke:#808080,stroke-width:1px
-    linkStyle 17 stroke:#808080,stroke-width:1px
+
 ```
 
 ---
