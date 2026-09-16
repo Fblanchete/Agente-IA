@@ -15,7 +15,7 @@ flowchart LR
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
     T1 -->|"`**No Resuelta**`"| T2("Agente IA realiza aviso WhatsApp")
-    T1 -->|"`**Incidencia**`"| T2("Agente IA realiza aviso WhatsApp")
+    T1 -->|"`**Incidencia**`"| T4("Agente IA realiza aviso Equipo Incidencias")
     T2 --> T3("`**Equipo ATC**: Alejandra`")
     T2 -.-> CRM3("CRM: Insercción resumen<br/>resolución Ficha Cliente")
   
@@ -27,7 +27,7 @@ flowchart LR
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 4 4
     classDef comment fill:#FFFFFF,stroke:#FF2C2C,color:#000000,stroke-dasharray: 5 5
     classDef CRM fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 5 5
-    class A1,A2,L2,L4,L5,T1,T2,T3 todos
+    class A1,A2,L2,L4,L5,T1,T2,T3,T4 todos
     class N0 nota
     class L3 comment
     class CRM1,LA,LNA,CRM3,CRM2,L6 CRM
