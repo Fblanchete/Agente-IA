@@ -5,8 +5,7 @@
 flowchart LR
     A1("📞 Llamada Cliente<br/>(680 34 96 04)") --> A2("🤖 Agente IA<br/>Identifica Lead / ATC")
 
-    A2 -->|"`**Lead**`"| L1("Identifica ciudad<br/>en la que quiere el trastero")
-    L1 --> L2("Agente IA transfiere<br/>a equipo correspondiente")
+    A2 -->|"`**Lead**`"| L2("Agente IA recoge las necesidades Lead --> Enfocando el cierre de la visita<br/>(Nombre Cliente, Centro y Tamaño)")
     L2 -.-> CRM1("CRM: Creación Lead en TT")
     L4 -.- L3("Entra con número IA (93...)<br/>Imposible reconocer nº cliente")
     L2 --> L4("`**Equipo Comercial MAD**: Gustavo & Juan Pablo<br/>**Equipo Comercial BCN**: Javi & Luís`")
@@ -28,7 +27,7 @@ flowchart LR
     classDef nota fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 4 4
     classDef comment fill:#FFFFFF,stroke:#FF2C2C,color:#000000,stroke-dasharray: 5 5
     classDef CRM fill:#FFFFFF,stroke:#000000,color:#000000,stroke-dasharray: 5 5
-    class A1,A2,L1,L2,L4,L5,T1,T2,T3 todos
+    class A1,A2,L2,L4,L5,T1,T2,T3 todos
     class N0 nota
     class L3 comment
     class CRM1,LA,LNA,CRM3,CRM2 CRM
