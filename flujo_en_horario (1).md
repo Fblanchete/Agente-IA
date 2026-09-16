@@ -11,8 +11,8 @@ flowchart LR
     L4 -.- L3("Entra con número IA (93...)<br/>Imposible reconocer nº cliente")
     L2 --> L4("`**Equipo Comercial MAD**: Gustavo & Juan Pablo<br/>**Equipo Comercial BCN**: Javi & Luís`")
     L2 --> L5("Notificación WhatsApp<br/>al Agente que recibe la llamada")
-    CRM1 -.-> |"**Llamada Atendida**"| LA("Inserción: Agente, Nombre Cliente,Centro, Resumen Llamada")
-    CRM1 -.-> |"**Llamada NO Atendida**"| LNA("Inserción: Agente, Ciudad,<br/>Indicado en CRM")
+    CRM1 -.-> |"`**Llamada Atendida**`"| LA("Inserción: Agente, Nombre Cliente,Centro, Resumen Llamada")
+    CRM1 -.-> |"`**Llamada NO Atendida**`"| LNA("Inserción: Agente, Ciudad,<br/>Indicado en CRM")
 
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
