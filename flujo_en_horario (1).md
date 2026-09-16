@@ -14,7 +14,7 @@ flowchart LR
 
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
-    T1 -->|"`**No Resuelta**`"| T2("Agente IA transfiere<br/>a equipo correspondiente")
+    T1 -->|"`**No Resuelta**`"| T2("Agente IA realiza aviso WhatsApp")
     T2 --> T3("`**Equipo ATC**: Alejandra`")
     T2 -.-> CRM3("CRM: Insercción resumen<br/>resolución Ficha Cliente")
   
