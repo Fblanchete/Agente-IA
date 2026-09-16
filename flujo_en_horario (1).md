@@ -15,10 +15,10 @@ flowchart LR
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
     T1 -->|"`**No Resuelta**`"| T2("Agente IA realiza aviso WhatsApp")
-    T1 -->|"`**Incidencia**`"| T4("Agente IA realiza aviso WhatsApp")
+    T1 -->|"`**Incidencias**`"| T4("Agente IA realiza aviso WhatsApp")
     T2 --> T3("`**Equipo ATC**: Alejandra`")
     T2 -.-> CRM3("CRM: Insercción resumen<br/>resolución Ficha Cliente")
-    T4 --> T5("`**Equipo Incidencia**`")
+    T4 --> T5("`**Equipo Incidencias**`")
   
 
     N0("ℹ️ Lead único por Agente:<br/>cada Lead lo gestiona<br/>siempre el mismo agente")
