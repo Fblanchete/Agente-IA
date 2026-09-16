@@ -9,7 +9,7 @@ flowchart LR
     L1 --> L2("Agente IA transfiere<br/>a equipo correspondiente")
     L1 -.-> CRM1("CRM: Creación Lead en TT")
     L4 -.- L3("Entra con número IA (93...)<br/>Imposible reconocer nº cliente")
-    L2 --> L4("Equipo Comercial MAD: Gustavo & Juan Pablo<br/>Equipo Comercial BCN: Javi & Luís")
+    L2 --> L4("`**Equipo Comercial MAD**`: Gustavo & Juan Pablo<br/>`**Equipo Comercial BCN**`: Javi & Luís")
     L2 --> L5("Notificación WhatsApp<br/>al Agente que recibe la llamada")
     CRM1 -.-> |"`**Llamada Atendida**`"| LA("Inserción: Agente, Nombre Cliente,Centro, Resumen Llamada")
     CRM1 -.-> |"`**Llamada NO Atendida**`"| LNA("Inserción: Agente, Ciudad,<br/>Indicado en CRM")
@@ -17,7 +17,7 @@ flowchart LR
     A2 -->|"`**ATC**`"| T1("Agente IA intenta<br/>resolver la solicitud/consulta")
     T1 -.->|"`**Resuelta**`"| CRM2("CRM: Inserta resumen<br/>de resolución Ficha Cliente")
     T1 -->|"`**No Resuelta**`"| T2("Agente IA transfiere<br/>a equipo correspondiente")
-    T2 --> T3("Equipo MAD<br/>Equipo BCN")
+    T2 --> T3("`**Equipo ATC**`: Alejandra")
     T2 -.-> CRM3("CRM: Insercción resumen<br/>resolución Ficha Cliente")
   
 
