@@ -29,7 +29,7 @@ flowchart LR
     class A1,A2,L2,L4,L5,T1,T2,T3 todos
     class N0 nota
     class L3 comment
-    class CRM1,LA,LNA,CRM3,CRM2 CRM,L6
+    class CRM1,LA,LNA,CRM3,CRM2,L6 CRM
    
 
 ```
